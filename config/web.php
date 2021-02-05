@@ -14,10 +14,12 @@ return [
             'class' => \hiqdev\yii2\wordpress\pages\Module::class,
             'pageSize' => 5,
             'storage' => [
-                'class' => \hiqdev\yii2\modules\pages\storage\WordPressApi::class,
+                'class' => \hiqdev\yii2\wordpress\pages\storage\WordPressApi::class,
                 'url' => $params['wordpress.url'],
             ],
         ],
+    ],
+    'components' => [
         'urlManager' => [
             'rules' => [
                 'articles' => 'articles/render/list',

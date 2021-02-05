@@ -18,5 +18,13 @@ return [
                 'url' => $params['wordpress.url'],
             ],
         ],
+        'urlManager' => [
+            'rules' => [
+                'articles' => 'articles/render/list',
+                'articles/list' => 'articles/render/list',
+                'articles/list/<name:.*>' => 'articles/render/list',
+                'articles/<page:.*>' => 'articles/render/index',
+            ],
+        ],
     ],
 ];

@@ -11,7 +11,7 @@
 return [
     'modules' => [
         'articles' => [
-            'class' => \hiqdev\yii2\modules\pages\Module::class,
+            'class' => \hiqdev\yii2\wordpress\pages\Module::class,
             'pageSize' => 5,
             'storage' => [
                 'class' => \hiqdev\yii2\modules\pages\storage\WordPressApi::class,

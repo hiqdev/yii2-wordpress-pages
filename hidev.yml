@@ -1,0 +1,11 @@
+package:
+    type:           yii2-extension
+    name:           yii2-wordpress-pages
+    title:          Yii2 WordPrees Pages Module
+    headline:       Yii2 WordPrees Pages
+    keywords:       yii2, wordpress, pages
+    description:    |
+        Allows to use WordPress as headless CMS
+
+        - Retrieves articles from WordPress through API
+        - Displays articles on the site

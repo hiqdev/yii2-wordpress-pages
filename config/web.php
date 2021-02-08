@@ -20,6 +20,12 @@ return [
         ],
     ],
     'components' => [
+        'themeManager' => [
+            'pathMap' => [
+                dirname(__DIR__) . '/src/widgets/views' => '$themedWidgetPaths',
+                dirname(__DIR__) . '/src/views' => '$themedViewPaths',
+            ],
+        ],
         'urlManager' => [
             'rules' => [
                 'articles' => 'articles/render/list',

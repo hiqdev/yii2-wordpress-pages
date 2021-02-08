@@ -11,7 +11,11 @@
 namespace hiqdev\yii2\wordpress\pages;
 
 use hiqdev\yii2\modules\pages\Module as PageModule;
+use hiqdev\yii2\wordpress\pages\controllers\RenderController;
 
 class Module extends PageModule
 {
+    public $controllerMap = [
+        'articles' => RenderController::class,
+    ];
 }
